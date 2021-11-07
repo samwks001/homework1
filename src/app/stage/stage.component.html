@@ -1,0 +1,8 @@
+<div class='stage'>
+    <div class='title'>
+        <p>Stage {{stage.stage}}</p>
+    </div>
+    <div cdkDropList  class='task' cdkDropListOrientation="horizontal" (cdkDropListDropped)="drop($event)">
+        <app-task *ngFor="let taskObj of stage.task" [task]="taskObj"  cdkDrag></app-task>
+    </div>
+</div>

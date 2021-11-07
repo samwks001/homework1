@@ -1,0 +1,11 @@
+.stage { display: flex; padding: 10px 0 ; 
+
+    .title { background-color: #666; color: #fff; width: 20%;}
+    .task { display: flex; flex-direction: row; ; background-color: #ddd; width: 80%; 
+        app-task { width: 33.33%;
+            &.cdk-drag-placeholder { opacity: 0.3; }
+        }
+    }
+}
+
+
